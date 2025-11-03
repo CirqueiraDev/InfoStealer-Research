@@ -1,4 +1,4 @@
-import requests, platform, socket, getpass, psutil, zipfile
+import requests, platform, socket, getpass, psutil
 from contextlib import suppress
 from datetime import datetime
 
@@ -62,8 +62,3 @@ Public IP info:
         
     zip_file.writestr(f"system_infos.txt", system_infos)
     return infos
-
-
-with zipfile.ZipFile("systeminfoss.zip", "w") as zf:
-    GetSystemInfos(zf)
-
