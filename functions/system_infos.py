@@ -1,6 +1,5 @@
 import requests, platform, socket, getpass, psutil
 from contextlib import suppress
-from datetime import datetime
 
 def GetSystemInfos(zip_file):
     infos = False
@@ -62,3 +61,4 @@ Public IP info:
         
     zip_file.writestr(f"system_infos.txt", system_infos)
     return infos
+
